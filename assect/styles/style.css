@@ -1,45 +1,45 @@
-body{
+.body{
     margin: 0;
     padding: 0;
 
 }
-a{
+.a1{
     text-decoration: none;
     font-weight: bold;
 }
 
-header>nav{
+.header>.nav{
     position: relative;
     height: 70px;
 
 }
-nav img{
+.nav .logo img{
     width: auto;
     height: 70px;
 }
 
-header>nav ul{
+.header>.nav .ul1{
     position: absolute;
     right: 15px;
     top: 0;
 
 }
 
-header>nav ul li{
+.header>.nav .ul1 li{
     text-decoration: none;
     display: inline-block;
     margin-right: 15px;
 
 }
-header>nav ul a{
+.header>.nav .ul1 a{
     font-size: 1.5em;
 }
-main{
+.main{
     position: relative;
     width: 100%;
 
 }
-main>aside{
+.main>.aside{
     position: absolute;
     width: 20%;
     top: 0;
@@ -47,45 +47,45 @@ main>aside{
     background-color: #47196c;
 
 }
-main>section{
+.main>.section{
     position: relative;
     width: 80%;
     left: 20%;
 }
-main>section>div{
+.main>section>div{
     width: 100%;
     height: 1px;
     box-shadow: 0 2px 2px black;
 }
 
-main>section>section>div{
+.main>section>.section>.img1{
     display: inline-block;
     width: 32%;
     border: green solid 2px;
 }
-main>section>section{
+.main>section>.section{
 
     padding-left: 10px;
     padding-top: 10px;
 }
-main>section>article{
+.main>section>.article{
     padding-left:10px;
     overflow-x: hidden;
     width: 95%;
 }
 
-main>section>article>p{
+.main>section>.article>p{
     width: 100%;
 }
-aside>section{
+.aside>.ul2{
     width: 100%;
 }
 
-aside ul li{
+.aside .ul2 li{
    list-style: none;
     padding-top: 15px;
 }
-aside ul{
+.aside .ul2{
    padding-left: 40px;
     width: 100%;
 
@@ -93,34 +93,34 @@ aside ul{
 
 
 
-footer{
+.footer{
     position: relative;
     background-color: #7f8c8d;
     height:50px;
 }
 
-footer h3{
+.footer h3{
  margin: 0;
     text-align: center;
     padding-top: 20px;
     color: white;
     font-weight: bold;
 }
-nav a{
+.nav a{
     color: black;
 }
-aside a {
+.aside a {
     color: white;
     font-size: 2.5em;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1440px) {
-    aside a {
+    .aside a {
         color: white;
         font-size: 1.7em;
     }
 
-    header > nav ul li {
+    .header > .nav .ul1 li {
         padding-top: 10px;
 
     }
@@ -130,12 +130,12 @@ aside a {
     }
 }
 @media all and (min-width: 768px) and (max-width: 1024px) {
-    aside a {
+    .aside a {
         color: #ffffff;
         font-size: 1.5em;
 
     }
-    header>nav ul li{
+    .header>.nav .ul1 li{
         padding-top: 10px;
 
     }
@@ -144,12 +144,12 @@ aside a {
     }
 }
 @media all and (min-width: 727px) and (max-width: 768px) {
-    aside a {
+    .aside a {
         color: white;
         font-size: 1.5em;
     }
 
-    header > nav ul li {
+    .header > .nav .ul1 li {
         padding-top: 10px;
 
     }
@@ -159,22 +159,22 @@ aside a {
     }
 }
 @media all and (max-width: 727px){
-       main>aside {
+       .main>.aside {
             display: none;
            background-color: red;
         }
-    main>section{
+    .main>section{
         left: 0;
         width: 100%;
     }
 
 }
     @media all and (min-width: 631px) and (max-width: 727px){
-        main>section{
+        .main>section{
             left: 0;
             width: 100%;
         }
-        header>nav ul li{
+        .header>.nav .ul1 li{
             padding-top: 10px;
 
         }
@@ -184,19 +184,19 @@ aside a {
     }
 
 @media all and (max-width: 631px){
-    header>nav ul li a{
+    .header>.nav .ul1 li a{
         font-size: 1.2em;
     }
-    header>nav ul {
+    .header>.nav .ul1 {
        margin: 0;
      left: 15%;
   top: 50px;
 
     }
-    header>nav{
+    .header>.nav{
         height: 90px;
     }
-    nav>div img{
+    .nav>.logo img{
         position: absolute;
         width: auto;
         height: 50px;
@@ -208,18 +208,18 @@ aside a {
 }
 
 @media all and (max-width: 550px){
-    header>nav ul{
+    .header>.nav ul1{
         left:12% ;
     }
-    header>nav ul li a{
+    .header>.nav .ul1 li a{
       font-size: 1.2em;
     }
-    main>section>section{
+    .main>section>.section{
         display:flex;
         flex-direction: column;
         border: green solid 2px;
     }
-    main>section>section>div{
+    .main>section>.section>div{
         position: relative;
         margin-top: 20px;
         left: 2.5%;
@@ -227,49 +227,49 @@ aside a {
     }
 }
 @media all and (min-width: 375px) and (max-width: 425px){
-    header>nav ul{
+    .header>.nav .ul1{
         left:9% ;
     }
 
-    header>nav ul li a{
+    .header>.nav .ul1 li a{
         font-size: 1.2em;
     }
 
-    header>nav ul li{
+    .header>.nav .ul1 li{
       margin-right: 5px;
     }
 
 }
 @media all and (min-width: 320px) and (max-width: 375px){
-    header>nav ul{
+    .header>.nav .ul1{
         left:1% ;
     }
 
-    header>nav ul li a{
+    .header>.nav .ul1 li a{
         font-size: 1.2em;
     }
 
-    header>nav ul li{
+    .header>.nav .ul1 li{
         margin-right: 5px;
     }
-    nav>div img{
+    .nav>.logo img{
         left: 25%;
     }
 
 }
 @media all  and (max-width: 320px){
-    header>nav ul{
+    .header>.nav .ul1{
         left:-10% ;
     }
 
-    header>nav ul li a{
+    .header>.nav .ul1 li a{
         font-size: 1em;
     }
 
-    header>nav ul li{
+    .header>.nav .ul1 li{
         margin-right: 2px;
     }
-    nav>div img{
+    .nav>.logo img{
         left: 15%;
     }
 
